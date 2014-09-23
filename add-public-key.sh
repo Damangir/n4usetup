@@ -1,2 +1,3 @@
 mkdir -p ~/.ssh
-cat ./public_key >> ~/.ssh/authorized_keys
+cat ${1:-public_key} >> ~/.ssh/authorized_keys
+sh how-to-ssh.sh
